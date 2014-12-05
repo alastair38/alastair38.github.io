@@ -1,0 +1,9 @@
+{
+  "globals": {
+    "site_title": "In the Burgh",
+    "description": "Harpjs-based site.",
+    "site_url": "http://intheburgh.co.uk",
+    "site_twitter": "dementiaMap",
+    "logo": "/images/logo.png"
+  }
+}
