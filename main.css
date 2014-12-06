@@ -1,0 +1,20 @@
+body{
+  font-family: "Lekton";
+  text-align: center;
+  padding: 50px 20px 0;
+  background: url('https://ununsplash.imgix.net/uploads/1413387158190559d80f7/6108b580?q=75&fm=jpg&s=d1c3df390a81d3371d05730a396ca390');
+background-size: cover;
+  color: #ddc826;
+  margin: 0px;
+}
+
+h1{
+  font-size: 65px;
+  line-height: 1.2em;
+  border-bottom: #ddc826 solid 1px;
+  padding: 20px 0;
+}
+
+h3{
+  font-weight: 300;
+}
