@@ -1,6 +1,10 @@
-  var mySwiper = new Swiper('.swiper-container',{
+jQuery(document).ready(function($) {
+
+var mySwiper = new Swiper('.swiper-container',{
     pagination: '.pagination',
     loop:true,
+    autoplay: 5000,
+    speed: 1000,
     grabCursor: true,
     paginationClickable: true
   })
@@ -12,3 +16,4 @@
     e.preventDefault()
     mySwiper.swipeNext()
   })
+})
