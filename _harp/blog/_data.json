@@ -1,9 +1,23 @@
 {
-  "sample-blog-post": {
+  "mono": {
     "title": "Mono",
     "date": "December 5th, 2014",
     "author": "charina-beswick",
-    "photo": "mono.jpg",
+    "photo": "mono.png",
+    "description": "Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet."
+  },
+"maz": {
+    "title": "Maz",
+    "date": "December 5th, 2014",
+    "author": "charina-beswick",
+    "photo": "maz.jpg",
+    "description": "Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet."
+  },
+"tyrella": {
+    "title": "Tyrella",
+    "date": "December 5th, 2014",
+    "author": "charina-beswick",
+    "photo": "tyrella.jpg",
     "description": "Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus vel augue laoreet."
   }
 }
