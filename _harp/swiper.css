@@ -103,14 +103,26 @@ sizes, pagination, etc.
 Pagination Styles
 ================================================================*/
 .swiper-pagination-switch {
-	/* Stylize pagination button: */
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	margin: 5px;
+	border: 2px solid tomato;
 
 }
 .swiper-active-switch {
-	/* Specific active button style: */
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: tomato;
 
 }
 .swiper-visible-switch {
-	/* Specific visible button style: */
-
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	border: 2px solid tomato;
 }
