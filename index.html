@@ -5,6 +5,9 @@
    <h1>In the Burgh</h1>
    <h3>Experiments in flatness</h3>
 
+
+    <a class="arrow-left" href="#"></a>
+    <a class="arrow-right" href="#"></a>
    <div class="swiper-container">
        <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -24,6 +27,14 @@
 var mySwiper = new Swiper('.swiper-container',{
     loop:true
 })
+ $('.arrow-left').on('click', function(e){
+    e.preventDefault()
+    mySwiper.swipePrev()
+  })
+  $('.arrow-right').on('click', function(e){
+    e.preventDefault()
+    mySwiper.swipeNext()
+  })
 </script>
 
   </body>
