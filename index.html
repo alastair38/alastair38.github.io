@@ -23,9 +23,14 @@
         </div>
     </div>
 
+    <div class="pagination"></div>
+
 <script>
 var mySwiper = new Swiper('.swiper-container',{
-    loop:true
+    pagination: '.pagination',
+    loop:true,
+    grabCursor: true,
+    paginationClickable: true
 })
  $('.arrow-left').on('click', function(e){
     e.preventDefault()
