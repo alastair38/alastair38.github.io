@@ -24,6 +24,9 @@ Basic Swiper Styles
   margin: 5px auto;
   position: relative;
 }
+.content-slider {
+    height: 300px;
+}
 .device .arrow-left {
   background: url(img/arrows.png) no-repeat left top;
   position: absolute;
