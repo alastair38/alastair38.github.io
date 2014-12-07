@@ -9,6 +9,7 @@ background-size: cover;
 }
 
 h1{
+  font-family: "Merriweather";
   font-size: 65px;
   line-height: 1.2em;
   border-bottom: #ddc826 solid 1px;
