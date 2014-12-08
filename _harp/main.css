@@ -13,7 +13,8 @@ body{
 .title {
     position: absolute;
     top: 0;
-    padding: 0 0 0 2em;
+    right: 0;
+    padding: 0 2em 0 0;
     width: 35vw;
     text-align: left;
 }
