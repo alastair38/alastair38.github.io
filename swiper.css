@@ -29,12 +29,6 @@ Basic Swiper Styles
     width: 100%;
 }
 
-.swiper-slide > div {
-    background-size: contain;
-    background-position: right;
-    background-repeat: no-repeat;
-}
-
 .content-slide img {
     width: 100%;
     height: 100vh;
