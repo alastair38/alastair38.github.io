@@ -12,6 +12,13 @@ background-size: cover;
   margin: 0px;
 }
 
+.title {
+    position: absolute;
+    top: 0;
+    padding: .5em;
+    background: black;
+}
+
 h2{
   font-size: 45px;
   line-height: 1.2em;
