@@ -20,15 +20,11 @@ body{
 }
 
 @media screen and (max-width: 40.063em) {
-    .title p {
+    .title {
     position: absolute;
     bottom: 0;
     width: 100vw;
-    }
-    .title h5 {
-    position: absolute;
-    top: 0;
-    width: 100vw;
+    text-align: center;
     }
 }
 
