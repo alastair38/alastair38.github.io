@@ -10,7 +10,7 @@ body{
   margin: 0px;
 }
 
-.title {
+.title, h5 {
     position: absolute;
     top: 0;
     padding: .5em;
