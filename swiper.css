@@ -21,7 +21,7 @@ Basic Swiper Styles
   height: 100vh;
   padding: 0px;
   background: rgba(0,0,0,.75);
-  margin: 5px auto;
+  margin: 0;
   position: relative;
 }
 .content-slide {
