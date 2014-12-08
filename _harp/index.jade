@@ -7,7 +7,9 @@ div(class="device")
                 div(class="swiper-slide")
                     div(class="content-slide")
                         img(src="/blog/#{article.photo}")
-                        p(class="title") #{ article.title } #{ article.description }
+                        p(class="title")
+                            h2 #{ article.title }
+                            p #{ article.description }
     div(class="pagination")
 
 script.
