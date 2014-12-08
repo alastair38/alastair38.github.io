@@ -27,6 +27,9 @@ Basic Swiper Styles
 .content-slide {
     height: 100vh;
     width: 100%;
+}
+
+.swiper-slide > div {
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
