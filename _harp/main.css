@@ -52,7 +52,7 @@ Basic Swiper Styles
   width: 100%;
   height: 100vh;
   padding: 0px;
-  background: rgba(0,0,0,.75);
+  background: rgba(0,0,0,.5);
   margin: 0;
   position: relative;
 }
