@@ -14,7 +14,9 @@ div(class="device")
 script.
     var mySwiper = new Swiper('.swiper-container',{
         loop:true,
-        grabCursor: true
+        grabCursor: true,
+        autoplay: 5000,
+        speed: 1000,
       })
       $('.arrow-left').on('click', function(e){
         e.preventDefault()
