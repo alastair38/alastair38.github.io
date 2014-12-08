@@ -19,6 +19,16 @@ body{
     text-align: left;
 }
 
+@media screen and (max-width: 40.063em) {
+    .title p {
+        width: 100vw;
+    }
+    .title h5 {
+        top: 0;
+        width: 100vw;
+    }
+}
+
 h2{
   font-size: 45px;
   line-height: 1.2em;
