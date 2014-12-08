@@ -15,7 +15,7 @@ body{
     bottom: 0;
     padding: .5em;
     background: rgba(0,0,0,.75);
-    width: 10%;
+    width: 100vw;
     text-align: center;
 }
 
