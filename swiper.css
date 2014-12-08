@@ -54,12 +54,6 @@ Basic Swiper Styles
   z-index: 100;
 }
 
-.device p {
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-}
-
 .swiper-container {
 	margin:0 auto;
 	position:relative;
