@@ -36,20 +36,22 @@ Basic Swiper Styles
 .device .arrow-left {
   background: url(img/arrows.png) no-repeat left top;
   position: absolute;
-  left: 50px;
+  left: 30px;
   top: 50%;
   margin-top: -15px;
   width: 17px;
   height: 30px;
+  z-index: 100;
 }
 .device .arrow-right {
   background: url(img/arrows.png) no-repeat left bottom;
   position: absolute;
-  right: 50px;
+  right: 30px;
   top: 50%;
   margin-top: -15px;
   width: 17px;
   height: 30px;
+  z-index: 100;
 }
 
 .swiper-container {
