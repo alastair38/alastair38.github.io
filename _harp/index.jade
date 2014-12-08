@@ -11,13 +11,6 @@ div(class="device")
                     img(src="/blog/#{article.photo}")
     div(class="pagination")
 
-
-ul
-  each article, slug in public.blog._data
-    li
-      img(src="/blog/#{article.photo}")
-
-
 script.
     var mySwiper = new Swiper('.swiper-container',{
         loop:true,
