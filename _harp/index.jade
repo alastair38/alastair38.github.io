@@ -5,7 +5,7 @@ div(class="device")
         div(class="swiper-wrapper")
             each article, slug in public.blog._data
                 div(class="swiper-slide")
-                    div(class="content-slide" style="background: url('/blog/#{article.photo}'); background-size: contain; background-position:; background-repeat: no-repeat;")
+                    div(class="content-slide" style="background: url('/blog/#{article.photo}'); background-size: contain; background-position: center; background-repeat: no-repeat;")
                         div(class="title")
                             h5 #{ article.title }
                             p #{ article.description }
