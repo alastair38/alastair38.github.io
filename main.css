@@ -17,6 +17,10 @@ body{
     background: black;
 }
 
+.title {
+    margin-top: 4em;
+}
+
 h2{
   font-size: 45px;
   line-height: 1.2em;
