@@ -32,6 +32,9 @@ Basic Swiper Styles
 .content-slide img {
     width: 100%;
     height: 100vh;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
 }
 
 .device .arrow-left {
