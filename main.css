@@ -21,11 +21,14 @@ body{
 
 @media screen and (max-width: 40.063em) {
     .title p {
-        width: 100vw;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
     }
     .title h5 {
-        top: 0;
-        width: 100vw;
+    position: absolute;
+    top: 0;
+    width: 100vw;
     }
 }
 
