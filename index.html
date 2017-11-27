@@ -1,259 +1,112 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>In the burgh</title>
-<link rel="icon" href="favicon.png">
-
-<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
-<style>
-
-
-/* setup styles
---------------------------------------------- */
-
-body, html {
-  overflow: hidden;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-body {
-  color: white;
-  font: 100% / 1.5 monospace;
-  background-size: cover;
-  background: url('mountains.png') no-repeat, tomato;
-  background-position-y: 100%;
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Koala concept</title>
+		<meta name="description" content="If I was a koala" />
+		<meta name="author" content="Alastair Cox" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700|Rock+Salt" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
 
-}
+	</head>
+	<body id="home">
 
-* {
-  margin:0;
-  padding:0;
-}
-
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
-  /* Fade in animation
-  --------------------------------------------- */
-
-  @-webkit-keyframes show {
-    0%   { opacity: 0;}
-    100% { opacity: 1; }
-  }
-  @-moz-keyframes show {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  @-o-keyframes show {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  @keyframes show {
-    0%   { opacity: 0;}
-    100% { opacity: 1; }
-  }
-
-  /* Parallax base styles
-  --------------------------------------------- */
-
-  .parallax {
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
-    font-size: 200%;
-    -webkit-perspective: 300px;
-    perspective: 300px;
-    -webkit-perspective-origin-x: 100%;
-    perspective-origin-x: 100%;
-  }
-
-  .parallax__group {
-    position: relative;
-    height: 100vh;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    background: rgba(0,0,0,.3);
-  }
-
-  .parallax__layer {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    -webkit-transform-origin-x: 100%;
-    transform-origin-x: 100%;
-  }
-
-  .parallax__layer--fore {
-    -webkit-transform: translateZ(90px) scale(.7);
-    transform: translateZ(90px) scale(.7);
-
-  }
-
-  .parallax__layer--back {
-    z-index: 3;
-  }
-
-  .parallax__layer--back img {
-    opacity: .5;
-  }
+	<div class="bg">
+		<div id="top" class="bg-left section scrollspy">
 
 
+		</div>
+		<div class="bg-right">
+			<h1 id="logo">AC</h1>
+			<ul class="section">
+			<li>
+				<a id="label" href="#top" href="#home">In this issue</a>
+			</li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#work">Work</a></li>
+			<li><a href="#projects">Projects</a></li>
+		</ul>
+			<span id="intro">
+				<h2>Alastair Cox / Developer & Digital Lead</h2>
+				<h2>Twitter: <a href="https://twitter.com/DementiaMap/">@dementiamap</a></h2>
+				<h2>Email: <a href="mailto:alastair@alastaircox.com">alastair@alastaircox.com</a></h2>
+			</span>
 
-   /* centre the content in the parallax layers */
+			<aside>
+					Todo: <span>get dressed + </span> go outside!
+			</aside>
+		</div>
+	</div>
 
-  .title {
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-      font-weight: lighter;
-}
-  
-  .title h1, .title p, .title ul {
-    animation: show 4000ms 1;
-  }
+	<section>
+		<article>
+			<div id="about" class="section scrollspy">
+				<h1 id="abouts">About</h1>
+				Edinburgh-based web designer and developer. Freelancer working odd hours, advocating for open standards. Digital lead at the Stirling and Forth Valley Participatory Neighbourhoods project.<br /><br />
+			  I build bespoke Wordpress templates, JAMstack Jekyll-based sites and progressive web apps drawing on the most suitable technologies available.
+			</div>
 
-  .title h1 {
-    font-family: 'Bangers', monospace;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-  }
+		<div class="img">
 
-  .parallax a {
-    background: white;
-    color: #444;
-    padding: .05em 1em;
-  }
+		</div>
+		</article>
+		<article>
+			<div class="img">
 
-  /* style the groups
-  --------------------------------------------- */
-
-  #group0 {
-    z-index: 5; /* slide over group 2 */
-  }
-
-  /* project and work
-  --------------------------------------------- */
-
-  ul {
-    margin: 0 0 0 0;
-  }
-
-  ul li {
-    display: inline-block;
-    list-style-type: none;
-    font-size: .7em;
-  }
-
-
-/* contact
---------------------------------------------- */
-
-  .contact {
-    position: fixed;
-    bottom: 10px;
-    right: 3%;
-    z-index: 10000;
-    font-size: 1.15em;
-    font-family: monospace;
-  }
-
-  .contact a {
-    color: white;
-    text-decoration: underline;
-  }
-
-  /* media queries
-  --------------------------------------------- */
-
-  @media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    h1 {
-      font-size: 1.5em;
-    }
-    .parallax {
-      font-size: 125%;
-    }
-    .contact {
-      font-size: .9em;
-      left: 0;
-      right: 0;
-      text-align: center;
-    }
-    ul {
-      margin: 0;
-    }
-}
-
-  @media only screen
-    and (min-device-width: 768px)
-    and (max-device-width: 1024px)
-    and (-webkit-min-device-pixel-ratio: 1) {
-      h1 {
-        font-size: 1.5em;
-      }
-      .parallax {
-        font-size: 125%;
-      }
-  }
+			</div>
+		<div id="work" class="section scrollspy">
+			<h1 id="works">Work</h1>
+			Recent commissions include: <br /><br />
+			<a class="work" href="https://begoodeie.com/">BeGOOD EIE (University of Oxford)</a>
+			<a class="work" href="https://criticalglobalhealth.org/">Critical Global Health (King's College London)</a>
+			<a class="work" href="https://memoryfriendly.org.uk/">Memory Friendly Neighbourhoods</a>
+			<a class="work" href="https://www.irishdancingclasses.co.uk/">Peacock Dance Academy</a>
+			<br /><br />
+			Open source development:<br /><br />
+			<a class="work" href="https://www.intheburgh.co.uk/">DementiaMap</a>
+		</div>
 
 
+		</article>
+		<article>
+		<div id="projects" class="section scrollspy">
+			<h1 id="project" class="heading">Projects</h1>
+			I am currently focused on assessing the use of everyday digital technologies as part of dementia-friendly communities<br /><br />
+			At the core of this is Stirling and Forth Valley Participatory Neighbourhoods, a three-year project funded by the Life Changes Trust which has grown out of Stirling University's ongoing dementia research and the recently-ended Memory Friendly Neighbourhoods programme.<br /><br />
+			As an adjunct, I am working on 'Shifting Paradigms in Dementia', a 6-month Scottish Universities Insight Institute project starting October 2017.
 
-</style>
-</head>
+		</div>
 
-<body>
+		<div class="img">
 
-  <div class="parallax">
-    <div id="group0" class="parallax__group">
-      <div class="parallax__layer parallax__layer--back">
-        <div class="title" >
-          <img src="clouds.png" />
-        </div>
-      </div>
-      <div class="parallax__layer parallax__layer--fore">
-        <div class="title" >
-          <h1>In the burgh</h1>
-          <p>projects + experimentations</p>
-          <ul>
-            <li>
-              <a href="/dementiawords/">
-                #DementiaWords
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
+		</div>
+		</article>
 
-  <div class="contact">
-    <span>&#8594; contact me via <a href="https://twitter.com/dementiamap" target="_blank">Twitter</a> or
-    <a href="mailto:alastair@alastaircox.com?Subject=Hi%20Alastair" target="_blank">Email</a>
-</span>
-  </div>
+	</section>
 
+		<main>
 
-</body>
+		</main>
+
+		<script>
+		$('body').on('click','a[href^="#"]',function(event){
+		    event.preventDefault();
+		    var target_offset = $(this.hash).offset() ? $(this.hash).offset().top : 0;
+		    //change this number to create the additional off set
+		    var customoffset = 0;
+		    $('html, body').animate({scrollTop:target_offset - customoffset}, 900);
+		});
+
+		$(document).ready(function(){
+	     $('.scrollspy').scrollSpy();
+	   });
+
+		</script>
+	</body>
 </html>
