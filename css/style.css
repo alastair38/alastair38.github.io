@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 350ms;
+}
+
+body {
+
+
+  width: 100%; position: relative;
+font-family: 'Roboto Mono';}
+
+
+  .bg-back{
+
+}
+
+
+ .img:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  z-index: 0;
+}
+
+
+.bg-right {
+  background: #FFC107;
+  /*
+  mobile changes
+  height: 0px !important;
+  width: 0px !important;
+  position: absolute; */
+}
+
+aside {
+  font-family: 'Rock Salt';
+  padding: 49% 0 0 2rem;
+  transform: rotate(1deg);
+  color: rgba(0,0,0, .24);
+  width: 60%;
+}
+
+a.active {
+  color: black !important;
+}
+
+aside span {
+  text-decoration: line-through;
+}
+
+.bg-left {
+    background: url('img/source.gif') no-repeat center center;
+    background-size: cover;
+
+position: relative;
+
+
+    mix-blend-mode: multiply;
+    filter: grayscale(10%);
+    z-index: 1;
+  }
+
+  .bg-left:after {
+    content: 'issue: 3/171012 / FREE (where sold)';
+    position: absolute;
+    font-size: .75rem;
+    bottom: 10px;
+    left: 10px;
+  }
+.bg {
+  height: 100vh;
+  width: 100%;
+  clear: both;
+  z-index: 1;
+  position: relative;
+  background: #999;
+}
+.bg div {
+  width: 50%;  /* 100% on mobile*/
+  height: 100vh;
+  float: left;
+
+}
+
+  #intro {
+    font-family: 'Roboto Mono', monospace;
+    color: #000;
+    font-size: .5rem;
+    background: #fff;
+    position: absolute;
+    padding: 5px;
+    bottom: 10px;
+    right: 10px; /* 51% on mobile */
+    text-align: right;
+    line-height: 1.5;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    overflow: hidden;
+    z-index: 10;
+  }
+
+  #intro a {
+    color: darkblue;
+  }
+
+  #intro h2:first-of-type {
+    text-transform: uppercase;
+  }
+
+  section {
+
+    position: relative;
+        background: #f00;
+        z-index: -1;
+    width: 100%;
+    padding: 0;
+    clear: both;
+
+  }
+
+  article h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+
+  article {
+    height: 100vh;
+    width: 100%;
+  }
+
+
+
+  article div {
+  display: block;
+  height: 100vh;
+  width: 50%; /* 100% on mobile */
+  float: left;
+  padding: 0 2rem;
+  }
+
+  article:last-of-type, #project-text {
+    background: tomato;
+  }
+
+  article:first-of-type, #about-text {
+    background: teal;
+  }
+
+  article:nth-child(2), #work-text {
+    background: lightgreen;
+  }
+
+
+
+  .img {
+    background: url('img/source.gif') no-repeat center center;
+    background-size: cover;
+    mix-blend-mode: multiply;
+    filter: grayscale(10%);
+
+    /* display: none on mobile */
+  }
+
+
+  #logo {
+    position: absolute;
+    font-size: 10rem;
+    font-family: 'Roboto Mono', monospace;
+    color: #FFC107;
+
+    top: -8rem;
+    left: 5px;
+
+    z-index: 6;}
+
+ul
+{
+font-family: 'Roboto Mono', monospace;
+position: fixed;
+overflow: hidden;
+right: 51%;
+bottom: 10px; /* top 10px on mobile */
+z-index: 10;
+display: block;
+
+
+    list-style: none;
+
+    text-align: right;
+}
+ li
+{
+    position: relative;
+    width: auto;
+
+    margin: 5px;
+    cursor: pointer;
+}
+
+li:first-of-type {
+  background: white;
+  width: 90px;
+  padding: 2px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+li a#label {
+  color: black;
+  text-decoration: none;
+}
+li a:not(#label) {
+  text-decoration: none;
+  color: white;
+}
+
+
+a {
+
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#work a {
+  display: block;
+  padding: 5px 0;
+}
+
+
+@media (max-width: 800px) {
+
+
+
+  ul {
+    top: 10px;
+    right: 10px;
+  }
+
+  .img, aside {
+    display: none;
+  }
+
+  article div, .bg div {
+    width: 100%;
+  }
+
+  .bg-right {
+    background: transparent;
+    position: absolute;
+  }
+
+
+
+
+
+article:last-of-type {
+
+}
+
+}
+
+@media (max-width: 600px) {
+  #intro {
+    left: 10px;
+    text-align: left;
+  }
+  .bg-left:after {
+    display: none;
+  }
+
+}
+
+@media (max-width: 450px) {
+  #logo {
+    font-size: 8rem;
+    top: -6rem;
+  }
+  article h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  article div {
+    padding-top: 4rem;
+    font-size: .8rem;
+  }
+}
